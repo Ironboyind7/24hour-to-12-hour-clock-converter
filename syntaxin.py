@@ -4,9 +4,9 @@ def to12hr(strtime):
     if lis[0] > 12:
         lis[0] -=12
         lis = f"{lis[0]}:{lis[1]}:{lis[2]}.PM"
-        print(lis)
+        return lis
     else:
         lis = f"{lis[0]}:{lis[1]}:{lis[2]}.AM"
-        print(lis)
+        return lis
         
-to12hr("12:0:0")
+print(to12hr("12:0:0"))
